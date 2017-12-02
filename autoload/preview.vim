@@ -133,7 +133,7 @@ class Preview
   def show_rdoc
     return unless load_dependencies(:rdoc)
     show_with(:browser) do
-      wrap_html GitHub::Markup.render_s(GitHub::Markups::MARKUP_MARKDOWN, content)
+      wrap_html GitHub::Markup.render_s(GitHub::Markups::MARKUP_RDOC, content)
     end
   end
 
